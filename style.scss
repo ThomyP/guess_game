@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body{
+  max-width: 500px;
+  margin: 0 auto;
+
+
+  .game_box {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+
+    .game_name{
+      color: rgb(16, 29, 175);
+      font-family: monospace;
+    }
+
+    .game_field{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      text-align: center;
+
+      .user_info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        // border: 1px solid black;
+
+        #images{
+          margin-top: 20px;
+          display: flex;
+          align-self: center;
+          max-width: 140px;
+          height: 140px;
+          font-size: 18px;
+        }
+
+        img{
+          width: 100%;
+          height: auto;
+        }
+
+        .answer_box {
+          min-height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #user_guess{
+          width: 60%;
+          text-align: center;
+          font-size: 24px;
+        }
+
+        #confirm_btn {
+          width: 40px;
+          background-color: greenyellow;
+          border-radius: 5px;
+          font-size: 24px;
+        }
+  
+        .user_field {
+          flex: 1;
+          
+          .data_number {
+            width: 60%;
+            text-align: center;
+            font-size: 24px;
+          }
+          
+        }
+        
+        .new_game_btn {
+          
+          height: 30px;
+          width: 80%;
+          background-color: greenyellow;
+          border-radius: 5px;
+          font-size: 24px;
+          align-self: center;
+        }
+      }
+  
+      .user_output {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        flex: 1;
+        // border: 1px solid black;
+      }
+
+    }
+    
+  }
+  
+
+}
